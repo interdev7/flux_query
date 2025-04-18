@@ -1,3 +1,8 @@
+<p align="center">
+  
+<img src="https://github.com/user-attachments/assets/ad95620c-15f8-4409-b1cb-4891aec4a32b" height="180" />
+</p>
+
 # Flux Query
 
 [![Pub Version](https://img.shields.io/pub/v/flux_query.svg)](https://pub.dev/packages/flux_query)
