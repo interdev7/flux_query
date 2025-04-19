@@ -1,6 +1,5 @@
 <p align="center">
-  
-<img src="https://github.com/user-attachments/assets/ad95620c-15f8-4409-b1cb-4891aec4a32b" height="180" />
+  <img src="https://github.com/user-attachments/assets/ad95620c-15f8-4409-b1cb-4891aec4a32b" height="180" />
 </p>
 
 # Flux Query
@@ -47,7 +46,7 @@ A powerful and flexible library for caching data in Flutter applications with mi
 - **Return stale data on errors:** always something to display to the user
 - **Customizable offline policy:** data access without network connectivity
 
-## Quick Start
+## 🚀 Quick Start
 
 ```dart
 // 1. Create a FluxQueryClient
@@ -70,7 +69,7 @@ FluxQueryBuilder<User>(
 )
 ```
 
-## Additional Features
+## 🛠️ Additional Features
 
 ### Polling
 
@@ -105,7 +104,7 @@ final cache = FluxQueryCache(useAutoRemoveData: true);
 final client = FluxQueryClient(cache: cache);
 ```
 
-## Features
+## 📦 Features
 
 - 🧠 **Smart Caching**: Cache API responses with configurable staleness and expiration times
 - 🔄 **Background Refetching**: Automatically refetch stale data while showing cached results
@@ -114,16 +113,16 @@ final client = FluxQueryClient(cache: cache);
 - 🔌 **Framework Agnostic**: Works with any state management solution
 - 🧪 **Framework Integrations**: Built-in integrations for Provider, Riverpod, and Bloc
 
-## Installation
+## 📥 Installation
 
 ```yaml
 dependencies:
   flux_query: ^0.0.1
 ```
 
-## Basic Usage
+## 📘 Basic Usage
 
-### Setup
+### 🔧 Setup
 
 First, add the `FluxQueryProvider` at the root of your application:
 
@@ -138,7 +137,7 @@ void main() {
 }
 ```
 
-### Fetching Data
+### 📡  Fetching Data
 
 Use the `FluxQueryBuilder` to fetch and cache data:
 
@@ -160,7 +159,7 @@ FluxQueryBuilder<User>(
 )
 ```
 
-### Mutations
+### ✏️ Mutations
 
 Use the `MutationBuilder` to update data:
 
@@ -180,7 +179,7 @@ MutationBuilder<User, UpdateUserParams>(
 )
 ```
 
-## FluxQueryStore with SharedPreferences
+## 💾 FluxQueryStore with SharedPreferences
 
 You can use your own persistent cache store. Here is an example using SharedPreferences:
 
@@ -237,7 +236,7 @@ final cache = FluxQueryCache(store: SharedPrefsStore());
 final client = FluxQueryClient(cache: cache);
 ```
 
-## InMemoryStore (Default Cache)
+## 🧠 InMemoryStore (Default Cache)
 
 By default, `FluxQueryCache` uses an in-memory cache (InMemoryStore), which is fast and suitable for most use cases where you don't need persistence between app launches.
 
@@ -258,7 +257,7 @@ final cache = FluxQueryCache(store: InMemoryStore());
 
 If you want persistence, see the SharedPreferences example below.
 
-## FluxQueryBuilder vs MutationBuilder
+## FluxQueryBuilder 🆚 MutationBuilder
 
 **FluxQueryBuilder** and **MutationBuilder** are widgets for working with asynchronous data, but they serve different purposes:
 
@@ -493,7 +492,7 @@ You can choose different cache stores depending on your needs:
 | SharedPreferences  | ✅ Yes      | 🐢 Slower    | Simple key-value, small data, app settings     | See example below             |
 | Hive/Isar/SQLite   | ✅ Yes      | 🚀 Fast      | Large/complex data, offline, advanced queries  | Implement your own CacheStore |
 
-### Recommendations
+### 📌 Recommendations
 
 - **Use `InMemoryStore`** (default) for most UI and short-lived data. Fastest, but data is lost on app restart.
 - **Use `SharedPreferences`** for small, simple, persistent key-value data (e.g., tokens, flags, small lists).
@@ -643,7 +642,7 @@ final cache = FluxQueryCache(store: IsarCacheStore(isar));
 - Use `riverpod_query` if you are already using Riverpod and don't need persistence.
 - Use `graphql_flutter` for GraphQL APIs with advanced caching.
 
-## How Flux Query Works Under the Hood
+## 🔬 How Flux Query Works Under the Hood
 
 Flux Query implements a reactive architecture without using Flutter's StreamBuilder widget, while still providing instant UI updates when cache data changes. Here's a technical look at how it works:
 
