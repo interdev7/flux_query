@@ -762,6 +762,6 @@ void _emit<T>(String key, FluxQueryResult<T> result) {
 
 By abstracting stream complexity, Flux Query provides all benefits of stream reactivity without exposing the complicated stream management to developers, resulting in a simpler, less error-prone API.
 
-## 📃 License
+## 👨‍💻 Maintainers
 
-MIT © 2025 — Created with ❤️ by [interdev7](https://github.com/interdev7)
+- [Anton Samoylov](https://github.com/interdev7)

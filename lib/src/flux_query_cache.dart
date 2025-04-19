@@ -46,7 +46,7 @@ class FluxQueryCache {
 
   FluxQueryCache({FluxCacheStore? store, this.useAutoRemoveData = false}) : _store = store ?? InMemoryStore();
 
-  InMemoryStore? get _inMemoryStore => _store is InMemoryStore ? _store : null;
+  InMemoryStore? get _inMemoryStore => _store is InMemoryStore ? _store as InMemoryStore : null;
 
   void _autoRemoveExpired() {
     if (!useAutoRemoveData) return;
